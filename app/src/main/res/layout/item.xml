@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:background="@drawable/game"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    android:id="@+id/item"
+    android:padding="6dp">
+
+
+    <ImageView
+        android:id="@+id/etat"
+        android:layout_width="12dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/unnamed"
+        android:layout_marginLeft="10dp"></ImageView>
+
+    <TextView
+        android:id="@+id/routername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="UserName"
+        android:textColor="#003366"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+
+         />
+    <TextView
+        android:id="@+id/UserName_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:fontFamily="@font/montserrat"
+        android:text="UserName"
+        android:textColor="#003366"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:layout_below="@+id/routername"
+        android:textStyle="normal"
+        android:layout_marginLeft="25dp" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="0 minutes ago"
+        android:textColor="#003366"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+
+
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_marginTop="10dp"
+        android:text="Edit"
+        android:layout_width="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_height="30dp"
+        android:background="@drawable/cornerbutton2"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        android:textColor="#003366"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+    </Button>
+
+
+
+</RelativeLayout>

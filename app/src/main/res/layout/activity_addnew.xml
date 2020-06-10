@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addnew">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+            <RelativeLayout
+                android:id="@+id/e1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                >
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Router details"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"></TextView>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                >
+                <EditText
+                    android:id="@+id/info1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    ></EditText>
+
+                <me.dm7.barcodescanner.zxing.ZXingScannerView
+                    android:id="@+id/zxing"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/info1"
+                    android:layout_centerHorizontal="true">
+
+                </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+                <EditText
+                    android:id="@+id/info3"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Mac adress"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/zxing"
+                    android:layout_marginTop="5dp"
+                    ></EditText>
+                <EditText
+                    android:id="@+id/info4"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Model"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/info3"
+                    android:layout_marginTop="10dp"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/info2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="IP Adress"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_below="@+id/info4"
+                    android:layout_marginTop="35dp"
+                    android:visibility="visible"
+                    ></EditText>
+
+                <Button
+                    android:id="@+id/conf"
+                    android:layout_below="@id/info2"
+                    android:layout_marginTop="10dp"
+                    android:text="Confirm"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cornerbutton2"
+                    android:fontFamily="@font/montserrat"
+                    android:textAllCaps="false"
+                    android:textColor="#003366">
+                </Button>
+                <Button
+                    android:id="@+id/annul"
+                    android:layout_below="@id/conf"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cancel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cornerbutton2"
+                    android:fontFamily="@font/montserrat"
+                    android:textAllCaps="false"
+                    android:textColor="#003366">
+                </Button>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

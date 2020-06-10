@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "749456870456",
+    "firebase_url": "https://testorange-e61c9.firebaseio.com",
+    "project_id": "testorange-e61c9",
+    "storage_bucket": "testorange-e61c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749456870456:android:d2d2f21dafbc8d3077eacd",
+        "android_client_info": {
+          "package_name": "com.muhameddhouibi.trackingdhouibimuhamed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749456870456-91hqafe0qhbv5bj5qsos4c12v19qusmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdLBY1X9F552rucmN5JpgKnz4jOMnlUdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749456870456-91hqafe0qhbv5bj5qsos4c12v19qusmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
